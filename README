@@ -1,0 +1,3 @@
+Simple command line tool for listing started Pivotal stories that you're working on. The idea is that this tool makes it easier to mention story numbers in your git commits.
+
+Rename .pvt.sample to .pvt, fill it in with your personal details, then run pvt.rb and you're off to the races.
