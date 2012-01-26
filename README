@@ -2,3 +2,6 @@ Simple command line tool for listing started Pivotal stories that you're working
 
 Instructions:
 Rename .pvt.sample to .pvt, fill it in with your personal details, place it in your home directory, then run pvt.rb. That's it!
+
+Requirements
+* Nokogiri gem
