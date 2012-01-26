@@ -22,16 +22,16 @@ opts = {}
 
 open CONFIG_PATH do |config|
   config.each_line do |line|
-    line.strip!
+    line.gsub!(/#.*$/, '') # Strip comments
+    line.strip! # Eliminate whitespace
 
-    next if line.start_with? "#" or line.empty?
+    # Ignore empty lines
+    next if line.empty?
 
     name, value = line.split(':')
     opts[name.to_sym] = value.strip
   end
 end
-
-
 
 # Construct the URL
 filter = CGI::escape(FILTER_FORMAT % opts[:initials])
@@ -39,7 +39,7 @@ filter_uri = URI.parse(FILTER_API_URL % [opts[:project_id], filter])
 
 # Grab the stories (XML)
 response = Net::HTTP.start(filter_uri.host, filter_uri.port) do |http|
-  http.get("#{filter_uri.path}?#{filter_uri.query}", {"X-TrackerToken" => opts[:token]})
+  http.get("#{filter_uri.path}?#{filter_uri.query}", "X-TrackerToken" => opts[:token])
 end
 
 # Parse out the stories and write them to stdout
