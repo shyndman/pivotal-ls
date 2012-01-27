@@ -6,4 +6,5 @@ Instructions:
 Rename .pvt.sample to .pvt, fill it in with your personal details, place it in your home directory, then run pvt.rb. That's it!
 
 Requirements
+* Ruby 1.9.x
 * Nokogiri gem
