@@ -42,7 +42,6 @@ client = Net::HTTP.new(filter_uri.host, filter_uri.port)
 client.use_ssl = true
 
 # Grab the stories (XML)
-response = nil
 begin
   response = client.get("#{filter_uri.path}?#{filter_uri.query}", "X-TrackerToken" => opts[:token])
 rescue Exception => e

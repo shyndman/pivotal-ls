@@ -1,4 +1,6 @@
-Simple command line tool for listing started Pivotal stories that you're working on. The idea is that this tool makes it easier to mention story numbers in your git commits. For more information on the github post-commit, this blog post describes the process: http://soenkerohde.com/2010/01/connecting-pivotal-tracker-with-github/
+==== PIVOTAL-LS ====
+
+Simple command line tool for listing started Pivotal stories that you're working on. The idea is that this tool makes it easier to mention story numbers in your git commits. For more information on Github integration with Pivotal Tracker, this post describes the process: http://soenkerohde.com/2010/01/connecting-pivotal-tracker-with-github/
 
 Instructions:
 Rename .pvt.sample to .pvt, fill it in with your personal details, place it in your home directory, then run pvt.rb. That's it!
