@@ -54,6 +54,7 @@ end
 unless response.code.start_with? '2'
   $stderr.write "Error response received from Pivotal\n"
   $stderr.write "#{response.code}: #{response.message}\n"
+  $stderr.write "Might I suggest you check your internet connection?\n"
   exit 1
 end
 
