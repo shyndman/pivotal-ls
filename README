@@ -1,6 +1,6 @@
 ==== PIVOTAL-LS ====
 
-Simple command line tool for listing started Pivotal stories that you're working on. The idea is that this tool makes it easier to mention story numbers in your git commits, to add comments and state changes in Pivotal Tracker. For more information on Github integration with Pivotal Tracker, this post describes the process: http://soenkerohde.com/2010/01/connecting-pivotal-tracker-with-github/
+Simple command line tool for listing started Pivotal stories that you're working on. The idea is that this tool makes it easier to mention story numbers in your git commits that trigger post-receive Pivotal Tracker actions. For more information on Github integration with Pivotal Tracker, this post describes the process: http://soenkerohde.com/2010/01/connecting-pivotal-tracker-with-github/
 
 Requirements
 * Ruby 1.9.x
