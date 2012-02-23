@@ -1,6 +1,6 @@
-#! /usr/bin/ruby
-
 require "rubygems"
+require "bundler/setup"
+
 require "net/http"
 require "uri"
 require "cgi"
