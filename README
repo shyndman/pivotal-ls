@@ -2,13 +2,13 @@
 
 Simple command line tool for listing started Pivotal stories that you're working on. The idea is that this tool makes it easier to mention story numbers in your git commits, to add comments and state changes in Pivotal Tracker. For more information on Github integration with Pivotal Tracker, this post describes the process: http://soenkerohde.com/2010/01/connecting-pivotal-tracker-with-github/
 
+Requirements
+* Ruby 1.9.x
+* Bundler (gem bundler install)
+
 Instructions:
 1. Rename .pvt.sample to .pvt
 2. Fill .pvt in with your personal details
 3. Place .pvt in your home directory
 4. Run "bundle install" in pivotal-ls's directory
-5. Run "ruby pvt.rb" (or alias it to something simpler)
-
-Requirements
-* Ruby 1.9.x
-* Bundler
+5. Run "ruby pvt.rb" (or alias it to something simpler, and run that)
