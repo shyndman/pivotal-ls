@@ -4,7 +4,7 @@ Simple command line tool for listing started Pivotal stories that you're working
 
 Requirements
 * Ruby 1.9.x
-* Bundler (gem bundler install)
+* Bundler (gem install bundler)
 
 Instructions:
 1. Rename .pvt.sample to .pvt
